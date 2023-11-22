@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>我的测试页面</title>
+  </head>
+  <body>
+    <p>我是小菊，你喜欢我吗？</p>
+    <button id="myButton">a喜欢</button>
+    <button id="myButton">b非常喜欢</button>
+  </body>
+  <script>
+    // 定义变量
+const myButton = document.getElementById("myButton");
+
+// 点击按钮时触发事件
+myButton.onclick = function() 
+{
+  // 判断按钮的值
+  if (this.value === "喜欢") {
+    // 提示 "我喜欢你"
+    alert("我喜欢你");
+  } else if (this.value === "非常喜欢") {
+    // 提示 "我爱你"
+    alert("我爱你");
+  }
+};
+
+  </script>
+</html>
